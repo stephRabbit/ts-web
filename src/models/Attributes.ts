@@ -6,7 +6,7 @@ export class Attributes<T> {
    * @param key - is of type K
    * @returns type T[K] - object lookup
    */
-  get<K extends keyof T>(key: K): T[K] {
+  get = <K extends keyof T>(key: K): T[K] => {
     return this.data[key]
   }
 
