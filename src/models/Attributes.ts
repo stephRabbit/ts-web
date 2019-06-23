@@ -10,6 +10,18 @@ export class Attributes<T> {
     return this.data[key]
   }
 
+  /**
+   * Get all properties
+   * @returns T - shape of interface
+   */
+  getAll(): T {
+    return this.data
+  }
+
+  /**
+   * Update current object - this.data
+   * @param update - shape of interface
+   */
   set(update: T): void {
     Object.assign(this.data, update)
   }
