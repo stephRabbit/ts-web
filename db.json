@@ -4,6 +4,11 @@
       "id": 1,
       "name": "GIZZiLLA!",
       "age": 500
+    },
+    {
+      "id": 2,
+      "name": "GizMatic",
+      "age": 11
     }
   ]
 }
