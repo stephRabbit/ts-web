@@ -35,7 +35,12 @@ export class Model<T extends HasId> {
     private sync: Sync<T>
   ) { }
 
-  // Getters
+  /**
+   * Getters:
+   * Short syntax can be used since instances
+   * are initialize in constructor. Following pass throughs
+   * will be added after all instance are created
+   */
   on = this.events.on
   trigger = this.events.trigger
   get = this.attributes.get
