@@ -36,17 +36,9 @@ export class Model<T extends HasId> {
   ) { }
 
   // Getters
-  get on() {
-    return this.events.on
-  }
-
-  get trigger() {
-    return this.events.trigger
-  }
-
-  get get() {
-    return this.attributes.get
-  }
+  on = this.events.on
+  trigger = this.events.trigger
+  get = this.attributes.get
 
   /**
    * Call attribute set method with update
