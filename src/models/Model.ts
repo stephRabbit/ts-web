@@ -23,7 +23,7 @@ interface HasId {
   id?: number
 }
 
-type Callback = () => void
+export type Callback = () => void
 
 /**
  * @params <T> -shape of data constraint HasId

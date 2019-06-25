@@ -1,10 +1,15 @@
-import { User } from '../models/User'
+import { Model } from '../models/Model'
 
-export abstract class View {
+/**
+ * View
+ * @param {type} - Model class
+ * @param {interface} - shape on data that satisfies Model<K>
+ */
+export abstract class View<T extends Model<K>, K>  {
   abstract template(): string
   abstract eventsMap(): { [key: string]: () => void }
 
-  constructor(public parent: HTMLElement, public model: User) {
+  constructor(public parent: HTMLElement, public model: T) {
     this.bindModel()
   }
 

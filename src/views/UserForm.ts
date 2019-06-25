@@ -1,6 +1,14 @@
 import { View } from './View'
+import { User, UserProps } from '../models/User'
 
-export class UserForm extends View {
+/**
+ * UserForm
+ * Extends View - this.model will refer to an instance of a user
+ * and the different properties user is going to have - UserProps
+ * @param {type} - User
+ * @param {interface} - UserProps
+ */
+export class UserForm extends View<User, UserProps> {
   /**
    * @returns {object} - custom key name and callback reference
    */
