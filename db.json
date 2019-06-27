@@ -14,6 +14,11 @@
       "name": "GizBot",
       "age": 100,
       "id": 3
+    },
+    {
+      "name": "new name",
+      "age": 33,
+      "id": 4
     }
   ]
 }
